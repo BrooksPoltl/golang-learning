@@ -22,7 +22,8 @@ func main() {
 			zipCode: 62234,
 		},
 	}
-	brooks.updateName("tanner")
+	brooksPointer:= &brooks 
+	brooksPointer.updateName("Tanner")
 	brooks.print()
 }
 
@@ -30,6 +31,6 @@ func (p person) print() {
 	fmt.Printf("%+v", p)
 }
 
-func (p person) updateName(name string) {
-	p.firstName = name
+func (p *person) updateName(name string) {
+	(*p).firstName = name
 }
