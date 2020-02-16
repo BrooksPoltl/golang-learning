@@ -22,8 +22,7 @@ func main() {
 			zipCode: 62234,
 		},
 	}
-	brooksPointer:= &brooks 
-	brooksPointer.updateName("Tanner")
+	brooks.updateName("Tanner")
 	brooks.print()
 }
 
