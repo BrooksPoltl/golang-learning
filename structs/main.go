@@ -1,24 +1,24 @@
 package main
 
-import "fmt" 
+import "fmt"
 
 type person struct {
-	firstName string
-	lastName string
+	firstName   string
+	lastName    string
 	contactInfo contactInfo
 }
 
 type contactInfo struct {
-	email string
+	email   string
 	zipCode int
 }
 
 func main() {
 	brooks := person{
 		firstName: "Brooks",
-		lastName: "Poltl",
+		lastName:  "Poltl",
 		contactInfo: contactInfo{
-			email: "bpoltl1@gmail.com",
+			email:   "bpoltl1@gmail.com",
 			zipCode: 62234,
 		},
 	}
